@@ -1,0 +1,240 @@
+body{
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.background img{
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	top: -20%;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: -1;
+
+}
+
+.Content{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	width: auto;
+	height: auto;
+	top: 10px;
+	margin-left: 37px;
+
+}
+.logo img {
+	justify-content: center;
+	align-items: center;
+	float: left;
+	background-position: center;
+	height: 38px;
+	margin-right: 40px;
+}
+.menu ul {
+	bottom: 0px;
+	float: left;
+	justify-content: center;
+	display: inline-flex;
+	width: auto;
+	list-style: none;
+}
+.menu ul li{
+	bottom: 0px;
+	margin-right: 32px;
+	font-family: Lato;
+	position: relative;
+}
+
+.menu ul li a{
+	color: rgb(255,255,255,0.3);
+	text-decoration: none;
+	font-family: Lato;
+}
+
+.menu ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background-color: #fff;
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover{
+	color: #fff;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+	width: 100%;
+} 
+
+.contact-us-button button{
+	position: absolute;
+	left: 90%;
+	bottom: 00%;
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	font-family: Barlow;
+	font-weight: 500;
+	letter-spacing: 22;
+	border-radius: 5px;
+	border-color: transparent;
+	opacity: 0.84;
+	width: 80px;
+	height: 22px;
+
+}
+
+.contact-us-button button:hover{
+	opacity: 1;
+}
+
+.title h1{
+	color: #fff;
+	font-family: "Lato";
+	font-weight: bold;
+	font-size: 40px;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+
+
+.index-menu-circle {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 20px;
+	top: 35%;
+	bottom: 35%;
+}
+.index-menu-circle ul li{
+	height: 10px;
+	width: 10px;
+	background-color:transparent;
+	list-style: none;
+	margin-top: 15px;
+	border-radius: 10px;
+	border: 1.5px solid #fff;
+}
+
+.index-menu-circle ul li:nth-child(3){
+	height: 10px;
+	width: 10px;
+	background-color:#fff;
+	margin-top: 15px;
+	border-radius: 10px;
+	border: 1.5px solid #fff;
+}
+
+.index-menu-circle ul li:hover{
+	background-color: #fff;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	height: 100%;
+	width: 100%;
+	margin-left: 20px;
+}
+.gallery .card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 180px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 4px 20px 4px 20px;
+	align-items: center;
+	align-content: center;
+	margin: 50px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	background-image: url(../image/image1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.content{
+	transform: translateY(50px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.gallery .card h2{
+	margin-top: 30px;
+	color: #fff;
+	font-family: "lato";
+	font-weight: bold;
+	align-items: center;
+	text-align: center;
+}
+
+.gallery .card p{
+	color: #fff;
+	font-family: "lato";
+	font-size: 12px;
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+}
+
+.gallery .card a{
+	display: flex;
+	width: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-radius: 100px;
+	color: #000;
+	text-align: center;
+	justify-content: center;
+	margin: 40px;
+	margin-top: 20px;
+	font-family: Yu Gothic;
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #fff;
+}
+
+.gallery .card .content:hover{
+	transform: translateY(0px);
+	transition: 0.5s;
+	opacity: 1;
+}
+
+.gallery .card:hover{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 180px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 4px 20px 4px 20px;
+	align-items: center;
+	align-content: center;
+	margin: 50px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/image1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
